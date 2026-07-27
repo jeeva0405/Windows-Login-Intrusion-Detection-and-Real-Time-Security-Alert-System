@@ -1,0 +1,29 @@
+# Target build directory
+target/
+*.jar
+*.war
+*.ear
+
+# Logs directory & log files
+logs/
+*.log
+
+# Service state file
+config/state.properties
+
+# Temporary webcam captures
+*.jpg
+*.png
+
+# IDE & Editor files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
