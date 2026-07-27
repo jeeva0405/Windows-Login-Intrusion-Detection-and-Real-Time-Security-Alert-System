@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=250&section=header&text=Windows%20Login%20Sentinel&fontSize=52&animation=fadeIn&fontColor=e94560&fontAlignY=38&desc=Intrusion%20Detection%20%26%20Real-Time%20Security%20Alert%20System&descAlignY=54&descAlign=50&descColor=a8dadc" width="100%" />
+
 
 [![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 [![Windows](https://img.shields.io/badge/Windows-Event%20Log%204625-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://microsoft.com)
