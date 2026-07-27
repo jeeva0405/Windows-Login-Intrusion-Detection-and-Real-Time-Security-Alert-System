@@ -1,33 +1,46 @@
-# 🛡️ Windows Login Intrusion Detection and Real-Time Security Alert System
+<div align="center">
 
-**Real-Time Failed Login Detection & Email Alert System**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=250&section=header&text=Windows%20Login%20Sentinel&fontSize=52&animation=fadeIn&fontColor=e94560&fontAlignY=38&desc=Intrusion%20Detection%20%26%20Real-Time%20Security%20Alert%20System&descAlignY=54&descAlign=50&descColor=a8dadc" width="100%" />
 
-**Windows Login Intrusion Detection and Real-Time Security Alert System** is a Java-based background security service designed to protect Windows computers from unauthorized access attempts. It continuously monitors the Windows Security Event Log for failed authentication attempts (**Event ID 4625**), extracts crucial metadata (username, workstation, timestamp, logon type, failure reason, IP address), prevents duplicate alert notifications via state tracking, and immediately dispatches email alerts to the system owner.
+[![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![Windows](https://img.shields.io/badge/Windows-Event%20Log%204625-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://microsoft.com)
+[![WinSW](https://img.shields.io/badge/WinSW-Background%20Service-4A154B?style=for-the-badge&logo=windows-terminal&logoColor=white)](https://github.com/winsw/winsw)
+[![Jakarta Mail](https://img.shields.io/badge/Jakarta%20Mail-SMTP%20Alerts-00599C?style=for-the-badge&logo=gmail&logoColor=white)](https://jakarta.ee)
+[![JUnit 5](https://img.shields.io/badge/JUnit%205-100%25%20Tested-25A162?style=for-the-badge&logo=junit5&logoColor=white)](https://junit.org/junit5/)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+
+<br/>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=E94560&center=true&vCenter=true&width=750&lines=Real-time+failed+login+detection+(Event+ID+4625);Automatic+background+Windows+Service+execution;Instant+HTML+security+email+alerts+to+system+owner;Webcam+evidence+snapshot+capture;Zero+secrets+in+code+%E2%80%94+env-driven+security" alt="Typing SVG" />
+</p>
+
+</div>
 
 ---
 
-## 📌 Features
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Star-Struck.png" alt="Star-Struck" width="25" height="25" /> Features
 
 1. **Automatic Background Execution**: Runs as a silent background Windows Service on system startup using WinSW (Windows Service Wrapper).
 2. **Real-Time Failed Login Detection**: Instantly identifies Event ID 4625 when an incorrect password is entered at the lock screen, RDP session, or network login.
 3. **Duplicate Event Prevention**: Maintains persistent state (`config/state.properties`) recording the last processed `EventRecordID` to ensure each failed attempt triggers **exactly one** email alert.
-4. **Rich HTML & Text Email Alerts**: Dispatches security emails containing formatted incident tables, logon type explanations, failure reason descriptions, and device details via Jakarta Mail & SMTP (supporting Gmail App Passwords, Outlook, etc.).
-5. **Zero Password Storage**: Security-focused design that **never** captures, reads, or stores actual user passwords. Operates exclusively on official post-authentication Windows audit logs.
-6. **Secure Credential Isolation**: Loads sensitive email credentials from environment variables (`EMAIL_USERNAME`, `EMAIL_APP_PASSWORD`, `ALERT_RECIPIENT_EMAIL`) with fallback to properties files or WinSW service environment tags (`<env name="..." value="..."/>`).
+4. **Rich HTML & Text Email Alerts**: Dispatches security emails containing formatted incident tables, logon type explanations, failure reason descriptions, and device details via Jakarta Mail & SMTP.
+5. **Webcam Intruder Snapshot**: Automatically captures a snapshot via webcam upon detection of an unauthorized failed authentication attempt.
+6. **Zero Password Storage**: Security-focused design that **never** captures, reads, or stores actual user passwords. Operates exclusively on official post-authentication Windows audit logs.
+7. **Secure Credential Isolation**: Loads sensitive email credentials from environment variables (`EMAIL_USERNAME`, `EMAIL_APP_PASSWORD`, `ALERT_RECIPIENT_EMAIL`) with fallback to properties files or WinSW configuration.
 
 ---
 
-## 🔒 Security & Credentials Disclaimer
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked.png" alt="Locked" width="25" height="25" /> Security & Credentials Disclaimer
 
 > [!IMPORTANT]
 > **DO NOT HARDCODE REAL CREDENTIALS IN SOURCE CODE OR REPOSITORIES.**
 > 
-> Users **must manually replace placeholder values** in environment variables or configuration files with their own Gmail address and 16-character Gmail App Password.
-> Real credentials should never be committed to Git, GitHub, or logged to disk. The application automatically masks all username and password values in output logs.
+> Users **must manually replace placeholder values** in environment variables or configuration files with their own Gmail address and 16-character Gmail App Password. Real credentials should never be committed to Git, GitHub, or logged to disk. The application automatically masks all username and password values in output logs.
 
 ---
 
-## ⚙️ Environment Variables & Configuration
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Gear/Gear.png" alt="Gear" width="25" height="25" /> Environment Variables & Configuration
 
 Set the following environment variables on your system, or configure them in `service/WindowsLoginSentinel.xml` / `config/config.properties`:
 
@@ -39,7 +52,7 @@ Set the following environment variables on your system, or configure them in `se
 
 ---
 
-## 🏗️ Architecture & Workflow
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Triangular%20Ruler.png" alt="Architecture" width="25" height="25" /> Architecture & Workflow
 
 ```
 ┌────────────────────────────────┐
@@ -60,7 +73,7 @@ Set the following environment variables on your system, or configure them in `se
 └───────────────┬────────────────┘
                 │ 1. Parse XML Event Details
                 │ 2. Check record ID state (Prevent Duplicates)
-                │ 3. Extract metadata
+                │ 3. Capture webcam photo evidence
                 ▼
 ┌────────────────────────────────┐
 │      Email Alert Service       │
@@ -75,7 +88,7 @@ Set the following environment variables on your system, or configure them in `se
 
 ---
 
-## 📁 Project Structure
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Open%20File%20Folder.png" alt="Folder" width="25" height="25" /> Project Structure
 
 ```
 WindowsLoginSentinel/
@@ -101,6 +114,8 @@ WindowsLoginSentinel/
 │   │               │   └── EventParser.java             # Windows XML parser
 │   │               ├── email/
 │   │               │   └── EmailAlertService.java       # HTML email alert dispatcher
+│   │               ├── webcam/
+│   │               │   └── WebcamCaptureService.java    # Webcam intruder snapshot
 │   │               ├── security/
 │   │               │   └── CredentialManager.java       # Environment & properties loader
 │   │               └── service/
@@ -114,7 +129,7 @@ WindowsLoginSentinel/
 
 ---
 
-## 🚀 Building & Running
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20Places/Rocket.png" alt="Rocket" width="25" height="25" /> Building & Running
 
 ### Prerequisites
 - **JDK 17+** (JDK 17, 21, or 24 supported)
@@ -151,7 +166,7 @@ Get-Service -Name WindowsLoginSentinel
 
 ---
 
-## ✉️ Sample Email Alert
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Envelope.png" alt="Envelope" width="25" height="25" /> Sample Email Alert
 
 **Subject**: `⚠️ Unauthorized Login Attempt Detected on LAPTOP-KD4GP10F`
 
@@ -173,7 +188,7 @@ Please verify whether this login attempt was authorized.
 
 ---
 
-## 🛡️ Security Best Practices
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shield.png" alt="Shield" width="25" height="25" /> Security Best Practices
 
 - **Zero Password Interception**: Operates post-authentication by reading system audit logs generated by Windows Kernel.
 - **Gmail App Passwords**: Use [Google App Passwords](https://myaccount.google.com/apppasswords) instead of account passwords.
