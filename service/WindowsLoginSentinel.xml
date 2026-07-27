@@ -1,13 +1,13 @@
-﻿<service>
+<service>
   <id>WindowsLoginSentinel</id>
-  <name>Windows Login Sentinel Security Service</name>
-  <description>Monitors Windows Security Event Log for failed login attempts (Event ID 4625) and sends email alerts.</description>
+  <name>Windows Login Intrusion Detection and Real-Time Security Alert System</name>
+  <description>Monitors Windows Security Event Log for failed login attempts (Event ID 4625) and sends real-time email security alerts.</description>
   <executable>C:\Program Files\Common Files\Oracle\Java\javapath\java.exe</executable>
   <workingdirectory>C:\Users\asus\OneDrive\Desktop\Ai smart locker project</workingdirectory>
   <arguments>-jar "C:\Users\asus\OneDrive\Desktop\Ai smart locker project\target\WindowsLoginSentinel-1.0.0.jar"</arguments>
-  <env name="EMAIL_USERNAME" value="jeevajeevajo123@gmail.com" />
-  <env name="EMAIL_APP_PASSWORD" value="MySecurePassword123!" />
-  <env name="ALERT_RECIPIENT_EMAIL" value="jeevajeevajo123@gmail.com" />
+  <env name="EMAIL_USERNAME" value="YOUR_GMAIL_ADDRESS@gmail.com" />
+  <env name="EMAIL_APP_PASSWORD" value="YOUR_16_CHAR_APP_PASSWORD" />
+  <env name="ALERT_RECIPIENT_EMAIL" value="YOUR_ALERT_RECIPIENT@gmail.com" />
   <logpath>C:\Users\asus\OneDrive\Desktop\Ai smart locker project\logs</logpath>
   <log mode="roll-by-size">
     <sizeThreshold>10240</sizeThreshold>

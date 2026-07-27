@@ -7,8 +7,8 @@
     <groupId>com.loginsentinel</groupId>
     <artifactId>WindowsLoginSentinel</artifactId>
     <version>1.0.0</version>
-    <name>Windows Login Sentinel</name>
-    <description>Real-Time Windows Failed Login Detection and Email Alert System</description>
+    <name>Windows Login Intrusion Detection and Real-Time Security Alert System</name>
+    <description>Real-Time Windows Failed Login Detection and Security Alert System</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

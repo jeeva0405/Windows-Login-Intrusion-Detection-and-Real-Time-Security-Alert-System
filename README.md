@@ -1,8 +1,8 @@
-# 🛡️ Windows Login Sentinel
+# 🛡️ Windows Login Intrusion Detection and Real-Time Security Alert System
 
 **Real-Time Failed Login Detection & Email Alert System**
 
-Windows Login Sentinel is a Java-based background security service designed to protect Windows computers from unauthorized access attempts. It continuously monitors the Windows Security Event Log for failed authentication attempts (**Event ID 4625**), extracts crucial metadata (username, workstation, timestamp, logon type, failure reason, IP address), prevents duplicate alert notifications via state tracking, and immediately dispatches email alerts to the system owner.
+**Windows Login Intrusion Detection and Real-Time Security Alert System** is a Java-based background security service designed to protect Windows computers from unauthorized access attempts. It continuously monitors the Windows Security Event Log for failed authentication attempts (**Event ID 4625**), extracts crucial metadata (username, workstation, timestamp, logon type, failure reason, IP address), prevents duplicate alert notifications via state tracking, and immediately dispatches email alerts to the system owner.
 
 ---
 
