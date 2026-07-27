@@ -11,9 +11,10 @@ logs/
 # Service state file
 config/state.properties
 
-# Temporary webcam captures
-*.jpg
-*.png
+# Temporary webcam captures in root
+/*.jpg
+/*.png
+!assets/*.png
 
 # IDE & Editor files
 .idea/

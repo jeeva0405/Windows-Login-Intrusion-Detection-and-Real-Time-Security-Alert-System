@@ -31,28 +31,39 @@
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked.png" alt="Locked" width="25" height="25" /> Security & Credentials Disclaimer
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Camera.png" alt="Previews" width="25" height="25" /> Visual Previews & Screenshots
 
-> [!IMPORTANT]
-> **DO NOT HARDCODE REAL CREDENTIALS IN SOURCE CODE OR REPOSITORIES.**
-> 
-> Users **must manually replace placeholder values** in environment variables or configuration files with their own Gmail address and 16-character Gmail App Password. Real credentials should never be committed to Git, GitHub, or logged to disk. The application automatically masks all username and password values in output logs.
+> 💡 *Click on any screenshot to view the high-resolution image.*
+
+<div align="center">
+
+### 📧 Real-Time Email Alert Preview
+<a href="assets/email-alert-preview.png">
+  <img src="assets/email-alert-preview.png" alt="Real-Time Email Security Alert" width="85%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</a>
+
+<br/><br/>
+
+### 📸 Webcam Intruder Evidence Panel
+<a href="assets/intruder-capture-preview.png">
+  <img src="assets/intruder-capture-preview.png" alt="Webcam Intruder Capture Panel" width="85%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</a>
+
+</div>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Gear/Gear.png" alt="Gear" width="25" height="25" /> Environment Variables & Configuration
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Triangular%20Ruler.png" alt="Architecture" width="25" height="25" /> System Architecture & Workflow
 
-Set the following environment variables on your system, or configure them in `service/WindowsLoginSentinel.xml` / `config/config.properties`:
+> 💡 *Click on the architecture diagram to expand.*
 
-| Parameter / Variable | Description | Placeholder / Example |
-| :--- | :--- | :--- |
-| `EMAIL_USERNAME` | Sender email address | `YOUR_GMAIL_ADDRESS@gmail.com` |
-| `EMAIL_APP_PASSWORD` | 16-character Gmail App Password | `YOUR_16_CHAR_APP_PASSWORD` |
-| `ALERT_RECIPIENT_EMAIL` | Destination email for security alerts | `YOUR_ALERT_RECIPIENT@gmail.com` |
+<div align="center">
 
----
+<a href="assets/architecture-diagram.png">
+  <img src="assets/architecture-diagram.png" alt="Windows Security Intrusion Detection System Architecture" width="90%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</a>
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Triangular%20Ruler.png" alt="Architecture" width="25" height="25" /> Architecture & Workflow
+</div>
 
 ```
 ┌────────────────────────────────┐
@@ -88,6 +99,27 @@ Set the following environment variables on your system, or configure them in `se
 
 ---
 
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked.png" alt="Locked" width="25" height="25" /> Security & Credentials Disclaimer
+
+> [!IMPORTANT]
+> **DO NOT HARDCODE REAL CREDENTIALS IN SOURCE CODE OR REPOSITORIES.**
+> 
+> Users **must manually replace placeholder values** in environment variables or configuration files with their own Gmail address and 16-character Gmail App Password. Real credentials should never be committed to Git, GitHub, or logged to disk. The application automatically masks all username and password values in output logs.
+
+---
+
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Gear/Gear.png" alt="Gear" width="25" height="25" /> Environment Variables & Configuration
+
+Set the following environment variables on your system, or configure them in `service/WindowsLoginSentinel.xml` / `config/config.properties`:
+
+| Parameter / Variable | Description | Placeholder / Example |
+| :--- | :--- | :--- |
+| `EMAIL_USERNAME` | Sender email address | `YOUR_GMAIL_ADDRESS@gmail.com` |
+| `EMAIL_APP_PASSWORD` | 16-character Gmail App Password | `YOUR_16_CHAR_APP_PASSWORD` |
+| `ALERT_RECIPIENT_EMAIL` | Destination email for security alerts | `YOUR_ALERT_RECIPIENT@gmail.com` |
+
+---
+
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Open%20File%20Folder.png" alt="Folder" width="25" height="25" /> Project Structure
 
 ```
@@ -100,6 +132,10 @@ WindowsLoginSentinel/
 │   ├── WindowsLoginSentinel.xml   # WinSW service configuration (<env>, logs, startup)
 │   ├── install-service.ps1       # Automated Administrator service installer script
 │   └── uninstall-service.ps1     # Service removal script
+├── assets/                        # Clickable project screenshots & diagrams
+│   ├── architecture-diagram.png
+│   ├── email-alert-preview.png
+│   └── intruder-capture-preview.png
 ├── logs/                          # Windows Service output logs (auto-generated)
 ├── src/
 │   ├── main/
@@ -166,7 +202,7 @@ Get-Service -Name WindowsLoginSentinel
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Envelope.png" alt="Envelope" width="25" height="25" /> Sample Email Alert
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Envelope.png" alt="Envelope" width="25" height="25" /> Sample Email Alert Text
 
 **Subject**: `⚠️ Unauthorized Login Attempt Detected on LAPTOP-KD4GP10F`
 
