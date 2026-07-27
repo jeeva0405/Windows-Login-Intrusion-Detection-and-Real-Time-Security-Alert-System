@@ -53,13 +53,6 @@
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Triangular%20Ruler.png" alt="Architecture" width="25" height="25" /> System Architecture & Workflow
 
-> 💡 *Click on the architecture diagram to expand in high definition.*
-
-<div align="center">
-
-[![Windows Security Intrusion Detection System Architecture](https://raw.githubusercontent.com/jeeva0405/Windows-Login-Intrusion-Detection-and-Real-Time-Security-Alert-System/main/assets/architecture-diagram.png)](https://raw.githubusercontent.com/jeeva0405/Windows-Login-Intrusion-Detection-and-Real-Time-Security-Alert-System/main/assets/architecture-diagram.png)
-
-</div>
 
 ```
 ┌────────────────────────────────┐
