@@ -33,21 +33,19 @@
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Camera.png" alt="Previews" width="25" height="25" /> Visual Previews & Screenshots
 
-> 💡 *Click on any screenshot to view the high-resolution image.*
+> 💡 *Click on any image preview below to open and view the full-resolution screenshot.*
 
 <div align="center">
 
 ### 📧 Real-Time Email Alert Preview
-<a href="assets/email-alert-preview.png">
-  <img src="assets/email-alert-preview.png" alt="Real-Time Email Security Alert" width="85%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-</a>
 
-<br/><br/>
+[![Real-Time Email Security Alert](https://raw.githubusercontent.com/jeeva0405/Windows-Login-Intrusion-Detection-and-Real-Time-Security-Alert-System/main/assets/email-alert-preview.png)](https://raw.githubusercontent.com/jeeva0405/Windows-Login-Intrusion-Detection-and-Real-Time-Security-Alert-System/main/assets/email-alert-preview.png)
+
+<br/>
 
 ### 📸 Webcam Intruder Evidence Panel
-<a href="assets/intruder-capture-preview.png">
-  <img src="assets/intruder-capture-preview.png" alt="Webcam Intruder Capture Panel" width="85%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-</a>
+
+[![Webcam Intruder Capture Panel](https://raw.githubusercontent.com/jeeva0405/Windows-Login-Intrusion-Detection-and-Real-Time-Security-Alert-System/main/assets/intruder-capture-preview.png)](https://raw.githubusercontent.com/jeeva0405/Windows-Login-Intrusion-Detection-and-Real-Time-Security-Alert-System/main/assets/intruder-capture-preview.png)
 
 </div>
 
@@ -55,13 +53,11 @@
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Triangular%20Ruler.png" alt="Architecture" width="25" height="25" /> System Architecture & Workflow
 
-> 💡 *Click on the architecture diagram to expand.*
+> 💡 *Click on the architecture diagram to expand in high definition.*
 
 <div align="center">
 
-<a href="assets/architecture-diagram.png">
-  <img src="assets/architecture-diagram.png" alt="Windows Security Intrusion Detection System Architecture" width="90%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-</a>
+[![Windows Security Intrusion Detection System Architecture](https://raw.githubusercontent.com/jeeva0405/Windows-Login-Intrusion-Detection-and-Real-Time-Security-Alert-System/main/assets/architecture-diagram.png)](https://raw.githubusercontent.com/jeeva0405/Windows-Login-Intrusion-Detection-and-Real-Time-Security-Alert-System/main/assets/architecture-diagram.png)
 
 </div>
 
@@ -108,7 +104,7 @@
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Gear/Gear.png" alt="Gear" width="25" height="25" /> Environment Variables & Configuration
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" alt="Gear" width="25" height="25" /> Environment Variables & Configuration
 
 Set the following environment variables on your system, or configure them in `service/WindowsLoginSentinel.xml` / `config/config.properties`:
 
@@ -165,7 +161,7 @@ WindowsLoginSentinel/
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20Places/Rocket.png" alt="Rocket" width="25" height="25" /> Building & Running
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="Build" width="25" height="25" /> Building & Running
 
 ### Prerequisites
 - **JDK 17+** (JDK 17, 21, or 24 supported)
